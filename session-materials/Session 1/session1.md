@@ -154,6 +154,7 @@ Boolean logic uses `&&` (AND), `||` (OR), and `!` (NOT). Equality operators incl
 ```javascript
 console.log(true && false); // false
 console.log(10 === "10"); // false
+console.log(10 == "10"); // true
 ```
 
 ---
@@ -186,10 +187,10 @@ console.log(10 === "10"); // false
 3. **`concat(string1, string2, ...)`**  
    Concatenates strings.
    ```javascript
-   console.log("Hello".concat(" ", "World!"," ","Meefr" )); // Output: Hello World!
+   console.log("Hello".concat(" ", "World!"," ","Meefr" )); // Output: Hello World! Meefr
    
    // same as 
-   console.log("Hello " + "World! " + "Meefr")
+   console.log("Hello " + "World! " + "Meefr") // Output: Hello World! Meefr
    ```
 
 4. **`includes(substring, start)`**  
