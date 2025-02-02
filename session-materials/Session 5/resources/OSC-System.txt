@@ -1,0 +1,39 @@
+- OSC-System: 
+    - Committees:
+        - Technical:
+            - Backend
+            - Frontend
+            - Linux
+            - S&T
+            - Game
+            - Flutter
+        - Creative:
+            - Media 
+            - UI/UX
+            - Blender
+        - Non-Technical:
+            - PR
+            - HR
+    - Highboard:
+        - President:
+            -Amr Attar 
+        - VPs:
+            - Haneen 
+            - Nour
+            - Kamel 
+            - Mo2men
+        - Heads:
+            - Technical:
+                - Meefr [Backend]
+                - Dareen [Frontend]
+                - Amna [Linux]
+                - Abdelhakam [S&T]
+                - Mohamed Mostafa [Game] 
+                - Mostafa [Flutter]
+            - Creative:
+                - Asmaa [Creative]
+                - Salma [UI/UX]
+                - Baraa [Blender]
+            - Non-Technical:
+                - Sara [PR]
+                - Seif [HR]
