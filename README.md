@@ -8,6 +8,7 @@
 - [Session 3](./session-materials/Session%203/session3.md)
 - [Session 4](./session-materials/Session%204/RecapSession.md)
 - [Session 5](./session-materials/Session%205/session5.md)
+- [Session 6](./session-materials/Session%206/sesion6.md)
 
 <img src="https://i.ibb.co/HK4qMjj/OSCLogo.png" alt="OSC-FREE-PALESTINE" width="300px" height="300px">
 
