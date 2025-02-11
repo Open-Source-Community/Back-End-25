@@ -11,8 +11,11 @@
 7. [**Add users**](#Add-Users)
 8. [**Request Body**](#Request-Body)
 9. [**Delete user by ID**](#Delete-User-by-ID)
+<<<<<<< HEAD
 10. [**Task**](#Task)
 11. [**References**](References)
+=======
+>>>>>>> b54e60ea3b870167b3aa4c18108393882c714f23
 
 ---
 
