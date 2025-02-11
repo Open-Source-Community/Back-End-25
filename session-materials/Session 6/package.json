@@ -1,28 +1,18 @@
 {
-  "dependencies": {
-    "express": "^4.21.2",
-    "fs": "^0.0.1-security"
-  },
-  "name": "backend-25-test",
-  "description": "",
+  "name": "s6",
   "version": "1.0.0",
-  "main": "server.js",
-  "devDependencies": {
-    "nodemon": "^3.1.9"
-  },
+  "main": "index.js",
   "scripts": {
-    "dev": "nodemon session2.js",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Meefr/BackEnd-25-test.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Meefr/BackEnd-25-test/issues"
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.2"
   },
-  "homepage": "https://github.com/Meefr/BackEnd-25-test#readme"
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
 }
