@@ -1,0 +1,50 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "name": "Wireless Headphones",
+        "description": "Noise-canceling over-ear headphones with Bluetooth connectivity.",
+        "price": 99.99,
+        "category": "Electronics",
+        "stock": 50,
+        "rates": [{"Mario": 3}, {"Anas": 4}, {"Esraa": 1}, {"Mahmood": 1}]
+      },
+      {
+        "id": 2,
+        "name": "Smartphone",
+        "description": "Latest model smartphone with high-resolution camera and fast processor.",
+        "price": 699.99,
+        "category": "Electronics",
+        "stock": 30,
+        "rates": [{"Bakr": 5}, {"Reham": 1}, {"Esraa": 2}]
+      },
+      {
+        "id": 3,
+        "name": "Gaming Laptop",
+        "description": "High-performance gaming laptop with RTX graphics and 16GB RAM.",
+        "price": 1299.99,
+        "category": "Computers",
+        "stock": 20,
+        "rates": [{"Shehab": 5}, {"Mohamed": 1}, {"Mahmood": 1}, {"Sondous": 4}, {"Kirollos": 4}]
+      },
+      {
+        "id": 4,
+        "name": "Coffee Maker",
+        "description": "Automatic coffee machine with multiple brewing options.",
+        "price": 79.99,
+        "category": "Home Appliances",
+        "stock": 40,
+        "rates": [{"Mohamed": 1}, {"Nouran": 3}]
+      },
+      {
+        "id": 5,
+        "name": "Office Chair",
+        "description": "Ergonomic office chair with lumbar support and adjustable height.",
+        "price": 149.99,
+        "category": "Furniture",
+        "stock": 15,
+        "rates": [{"Bakr": 2}, {"Mahmood": 1}]
+      }
+    ]
+  }
+  

@@ -1,0 +1,30 @@
+{
+    "Committees": {
+      "Technical": ["Backend", "Frontend", "Linux", "S&T", "Game", "Flutter"],
+      "Creative": ["Media", "UI/UX", "Blender"],
+      "Non-Technical": ["PR", "HR"]
+    },
+    "Highboard": {
+      "President": "Amr Attar",
+      "VPs": ["Haneen", "Nour", "Kamoula", "Mo2men"],
+      "Heads": {
+        "Technical": {
+          "Backend": "Meefr",
+          "Frontend": "Dareen",
+          "Linux": "Amna",
+          "S&T": "Abdelhakam",
+          "Game": "Mohamed Mostafa",
+          "Flutter": "Mostafa"
+        },
+        "Creative": {
+          "Creative": "Asmaa",
+          "UI/UX": "Toqa",
+          "Blender": "Baraa"
+        },
+        "Non-Technical": {
+          "PR": "Sara",
+          "HR": "Seif"
+        }
+      }
+    }
+}
