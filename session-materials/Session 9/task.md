@@ -43,13 +43,14 @@ Implement the following authentication routes:
 ```json
 {
   "success": true,
-  "token": "jwt_token",
   "user": {
     "id": "string",
     "username": "string",
     "email": "string"
   }
 }
+// Save jwt Token in cookies as [token=jwt_token] 
+// Name it token !
 ```
 
 #### `POST /signout` - Logout user
@@ -76,7 +77,7 @@ Implement the following authentication routes:
 {
   "title": "string",
   "description": "string",
-  "status": "pending | completed"
+  "status": "Boolean"
 }
 ```
 **Response:**
@@ -88,19 +89,14 @@ Implement the following authentication routes:
     "id": "string",
     "title": "string",
     "description": "string",
-    "status": "pending | completed",
+    "status": "Boolean",
     "userId": "string"
   }
 }
 ```
 
 #### `PUT /change-status/:id` - Change the status of a todo
-**Request Body:**
-```json
-{
-  "status": "pending | completed"
-}
-```
+
 **Response:**
 ```json
 {
@@ -127,7 +123,7 @@ Implement the following authentication routes:
     "id": "string",
     "title": "string",
     "description": "string",
-    "status": "pending | completed",
+    "status": "Boolean",
     "userId": "string"
   }
 }
@@ -145,7 +141,7 @@ Implement the following authentication routes:
       "id": "string",
       "title": "string",
       "description": "string",
-      "status": "pending | completed",
+      "status": "Boolean",
       "userId": "string"
     }
   ]
@@ -162,7 +158,7 @@ Implement the following authentication routes:
       "id": "string",
       "title": "string",
       "description": "string",
-      "status": "pending",
+      "status": false,
       "userId": "string"
     }
   ]
@@ -170,6 +166,7 @@ Implement the following authentication routes:
 ```
 
 ## Important Notes
+- Use port number `3000` - will be used in automation testing. 
 - **Use middleware** for authentication to verify user identity before accessing protected routes.
 - Store the authenticated user's ID in the `req` object so that it can be accessed in subsequent middleware.
 - Follow best practices for structuring your project.
