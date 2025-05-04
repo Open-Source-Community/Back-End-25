@@ -30,7 +30,7 @@ Directory Structure should be like this
 1. Pull the official MongoDB image from Docker Hub.
 2. Create a named container called `my-mongodb` from the MongoDB image.
 3. Run the MongoDB container in detached mode with proper port mapping (example: 27017:27017).
-4. Connect to the MongoDB container and create a new database called `student_records` with a collection called `students`.
+4. Connect to the MongoDB container and create a new database called `student_records` with a collection called `students`. (use volume mapping)
 5. Insert at least three student documents into the collection.
 6. View the logs of your MongoDB container.
 7. Stop the container, restart it, and verify your data persists.
