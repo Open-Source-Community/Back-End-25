@@ -17,6 +17,7 @@ Directory Structure should be like this
     ├── expressjs-app/
     ├── Dockerfile
     ├── markdown.md
+    ├── screenshot.png
     └── exported-docker-image.tar (bonus)
 
 ```
@@ -70,3 +71,4 @@ Directory Structure should be like this
 - Complete Dockerfile
 - Markdown file
 - Exported Docker image file (bonus)
+- screenshot of the working API after running the container
