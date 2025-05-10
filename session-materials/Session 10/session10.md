@@ -8,6 +8,8 @@ For detailed materials and instructions, please refer to the **[official reposit
 
 To proceed with the tasks, ensure you have reviewed **[Session 1](https://github.com/Open-Source-Community/Get-To-Docker-24/tree/master/Session%201/README.md)** and **[Session 2](https://github.com/Open-Source-Community/Get-To-Docker-24/tree/master/Session%202/README.md)** from the repository.
 
+you can practice docker on [play-with-docker](https://labs.play-with-docker.com/) website 
+
 Once you have completed the study phase, you can advance to the **[tasks section](Tasks.md)** to apply your learning.
 
 ---
