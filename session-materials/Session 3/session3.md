@@ -23,7 +23,7 @@ function fetchData(callback) {
   }, 1000);
 }
 
-fetchData(message => console.log(message));
+fetchData((message) => console.log(message));
 ```
 
 ---
@@ -36,14 +36,14 @@ fetchData(message => console.log(message));
 
 ```javascript
 setTimeout(() => {
-  console.log('Hello, World!');
+  console.log("Hello, World!");
 }, 1000); // Prints 'Hello, World!' after 1 second
 ```
 
 You can also clear the timeout using `clearTimeout()` if needed:
 
 ```javascript
-const timeoutId = setTimeout(() => console.log('This won\'t run'), 1000);
+const timeoutId = setTimeout(() => console.log("This won't run"), 1000);
 clearTimeout(timeoutId);
 ```
 
@@ -57,7 +57,7 @@ clearTimeout(timeoutId);
 
 ```javascript
 const intervalId = setInterval(() => {
-  console.log('Repeating every second');
+  console.log("Repeating every second");
 }, 1000);
 ```
 
@@ -69,38 +69,79 @@ clearInterval(intervalId);
 
 ---
 
+## Callback Hell
+
+It happens when multiple asynchronous operations using callbacks are **nested** within each other, leading to deeply indented and hard-to-read code. It typically occurs when later tasks **depend** on the results of earlier ones in sequence. We use `callbacks` to handle asynchronous actions, but excessive nesting creates maintenance challenges, prompting alternatives like `Promises` and `async/await`.
+
+```javascript
+const f1 = (callback) => {
+  setTimeout(() => {
+    console.log(1);
+    callback();
+  }, 3000);
+};
+const f2 = (callback) => {
+  setTimeout(() => {
+    console.log(2);
+    callback();
+  }, 1000);
+};
+const f3 = (callback) => {
+  setTimeout(() => {
+    console.log(3);
+    callback();
+  }, 2000);
+};
+f1(() => {
+  f2(() => {
+    f3(() => {
+      console.log("done");
+    });
+  });
+});
+```
+
+---
+
 ## Promises
 
 Promises represent the eventual completion (or failure) of an asynchronous operation.
 
 ```javascript
 const fetchData = new Promise((resolve, reject) => {
-  setTimeout(() => resolve("Data fetched"), 1000);
+  setTimeout(() => {
+      //Fetch Data Check
+      let check = true;
+      if (check) resolve("Data fetched");
+      else reject("Error in fetching data");
+    }, 1000);
 });
 
-fetchData.then(data => console.log(data));
+fetchData.then((data) => console.log(data));
 ```
-### Promise status: 
+
+### Promise status:
+
 1. Pending -> undefined
-2. Fulfilled -> result 
+2. Fulfilled -> result
 3. Rejected -> error
 
 ### Chaining Promises
 
 ```javascript
 fetchData
-  .then(data => data.toUpperCase())
-  .then(upper => console.log(upper));
+  .then((data) => data.toUpperCase())
+  .then((upper) => console.log(upper));
 ```
 
 ### Error Handling
 
 ```javascript
 fetchData
-  .then(data => {
+  .then((data) => {
     throw new Error("Something went wrong");
   })
-  .catch(error => console.error(error));
+  .catch((error) => console.error(error));
 ```
 
 ---
@@ -132,7 +173,14 @@ A modern way to work with Promises, making asynchronous code look synchronous.
 
 ```javascript
 async function fetchData() {
-  const data = await new Promise(resolve => setTimeout(() => resolve("Data fetched"), 1000));
+  const data = await new Promise((resolve, reject) => {
+    setTimeout(() => {
+      //Fetch Data Check
+      let check = true;
+      if (check) resolve("Data fetched");
+      else reject("Error in fetching data");
+    }, 1000);
+  });
   console.log(data);
 }
 
@@ -144,12 +192,24 @@ fetchData();
 ## Task
 
 1. Implement a function that fetches data using Promises and Async/Await.
-    - need to search about fetch.
+   - need to search about fetch.
+2. Explain the output then modify the function to print numbers from 1 to 10, such that each number is printed after a 1-second interval (i.e., one number per second).
+   ```Javascript
+     const count = (num)=>{
+     for(let i = 1; i <= num ; i++){
+         let x = setTimeout(()=>console.log(i),1000)
+         }
+     }
+     count (10);
+   ```
+3. Do the previous task but using `setInterval`
+
 ---
 
 ## References
 
-### Specific Refs:  
+### Specific Refs:
+
 - [MDN Web Docs: setTimeout](https://developer.mozilla.org/en-US/docs/Web/API/Window/setTimeout)
 - [MDN Web Docs: setInterval](https://developer.mozilla.org/en-US/docs/Web/API/Window/setInterval)
 - [MDN Web Docs: Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
@@ -157,4 +217,5 @@ fetchData();
 - [MDN Web Docs: Await](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await)
 
 ### Optional Refs:
+
 - [JS Behind the scene]()
