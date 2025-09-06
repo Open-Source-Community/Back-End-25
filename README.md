@@ -14,6 +14,12 @@
 - [Session 9](./session-materials/Session%209/session9.md)
 - [Session10](./session-materials/Session%2010/session10.md)
 
+---
+## Extra Sessions
+- [Session 1](./extra-sessions/Session%201)
+- [Session 2](./extra-sessions/Session%202)
+
 <img src="https://i.ibb.co/HK4qMjj/OSCLogo.png" alt="OSC-FREE-PALESTINE" width="300px" height="300px">
 
 #### created by meefr
+
